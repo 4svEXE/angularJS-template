@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="./pages/home/components/hero/hero.styles.css" />
+
+<section class="hero">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" ng-repeat="slide in $ctrl.slides">
+        <img ng-src="{{ slide.image }}" alt="{{ slide.caption }}" />
+      </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="./features/auth/login/login.styles.css" />
+
+<div class="login-form">
+  <h2>Login</h2>
+  <form ng-submit="login()">
+    <div>
+      <label for="username">Username</label>
+      <input
+        id="username"
+        type="text"
+        ng-model="credentials.username"
+        required
+      />
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        ng-model="credentials.password"
+        required
+      />
+    </div>
+    <button type="submit">Login</button>
+  </form>
+</div>

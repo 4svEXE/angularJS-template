@@ -1,0 +1,18 @@
+:root {
+    --stroke-color: #E3E3E3;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 85px 0;
+}
+
+.header-wrapper{
+    margin-bottom: 100px;
+}

@@ -1,0 +1,39 @@
+<link
+  rel="stylesheet"
+  href="./pages/home/components/products/products.styles.css"
+/>
+
+<h2 class="section-title">Our Pricing Plans</h2>
+<div class="products">
+  <div class="plan" ng-repeat="plan in $ctrl.plans">
+    <div class="inner">
+      <span class="pricing">
+        <span> {{ plan.price }} <small>/ m</small> </span>
+      </span>
+      <p class="title">{{ plan.title }}</p>
+      <p class="info">{{ plan.info }}</p>
+      <ul class="features">
+        <li ng-repeat="feature in plan.features">
+          <span class="icon">
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                fill="currentColor"
+                d="M10 15.172l9.192-9.193 1.415 1.414L10 18l-6.364-6.364 1.414-1.414z"
+              ></path>
+            </svg>
+          </span>
+          <span>{{ feature }}</span>
+        </li>
+      </ul>
+      <div class="action">
+        <a class="button" href="#"> Choose plan </a>
+      </div>
+    </div>
+  </div>
+</div>

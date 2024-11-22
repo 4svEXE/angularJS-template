@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJS App</title>
+    <link rel="stylesheet" href="./shared/styles/normalize.css" />
+    <link rel="stylesheet" href="./shared/styles/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  </head>
+  <body>
+    <div ng-app="myApp">
+      <div class="header-wrapper">
+        <app-header></app-header>
+      </div>
+
+      <div class="content">
+        <div ng-view></div>
+      </div>
+
+      <app-footer></app-footer>
+    </div>
+
+    <div id="scripts">
+      <script src="./main.js" defer></script> 
+      <script src="pages/pages.module.js" defer></script>
+      <script src="pages/home/home.component.js" defer></script>
+      <script src="pages/about/about.component.js" defer></script>
+      <script src="pages/contacts/contacts.component.js" defer></script>
+
+      <script src="pages/home/components/hero/hero.component.js" defer></script>
+      <script src="pages/home/components/products/products.component.js" defer></script>
+      <script src="pages/home/components/contact-us/contact-us.component.js" defer></script>
+
+      <script src="shared/components/layouts/header/header.component.js" defer></script>
+      <script src="shared/components/layouts/footer/footer.component.js" defer></script>
+      <script src="features/auth/login/login.component.js" defer></script>
+    </div>
+  </body>
+</html>

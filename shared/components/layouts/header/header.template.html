@@ -1,0 +1,26 @@
+<link
+  rel="stylesheet"
+  href="./shared/components/layouts/header/header.styles.css"
+/>
+
+<header class="app-header">
+  <div class="logo">
+    <a href="/">
+      Logo Our Company
+    </a>
+  </div>
+
+  <nav class="main-nav">
+    <ul>
+      <li ng-repeat="link in $ctrl.navigation">
+        <a ng-href="{{ link.url }}">{{ link.label }}</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="login">
+    <button class="login-btn">
+      Sign In
+    </button>
+  </div>
+</header>
